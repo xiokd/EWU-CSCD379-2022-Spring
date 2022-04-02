@@ -2,7 +2,7 @@ Please feel free to submit updates.
 
 ## Instructors ##
 [Grant Erickson](https://github.com/GrantErickson), [Meg Woodford](https://github.com/mmwoodfo), and [Mark Michaelis](https://github.com/MarkMichaelis)
-For any general question we suggest asking in Teams so that others can help as well. We encourage people to work together and collaborate. Please feel free to help your fellow students out. Though it is possible to privately message people directly, as much as possible, we encourage open discussion on the main chat so that others can benefit as well.
+For general questions, we suggest asking in Teams so that others can help as well. We encourage people to work together and collaborate. Please feel free to help your fellow students out. Though it is possible to privately message people directly, as much as possible, we encourage open discussion on the main chat so that others can benefit as well.
 You can also send an e-mail to: [EWU-Instructors@IntelliTect.com](EWU-Instructors@IntelliTect.com)
 
 ## GitHub Information
@@ -37,15 +37,15 @@ This class will build on CSCD-371. It will be very difficult if you have not tak
 
 ## General Information:
 * [**Grading System**](Homework-Grading.md)
-* **Office Hours**: Office hours are available before class on Tuesday's and Thursdays starting at 1 PM.  To ensure that an instructor will be available, please schedule an appointment 24-hours beforehand by sending a meeting request email to EWU-Instructors@IntelliTect.com.  Alternative times may be available upon request.
+* **Office Hours**: Office hours are available before class on Tuesday's and Thursdays starting at 1 PM. To ensure that an instructor will be available, please schedule an appointment 24-hours beforehand by sending a meeting request email to EWU-Instructors@IntelliTect.com. Alternative times may be available upon request.
 
 ## Computer Setup ##
 
 ### Required ###
 - [.NET 6.0](https://dotnet.microsoft.com/download)
 - [Visual Studio Code](https://code.visualstudio.com/) This can largely be used as an alternative to Visual Studio. Many of us also use it as our catch-all lightweight text/code editor.
-- [Azure for Students](https://azure.microsoft.com/en-us/free/students/) You will need to sign up for the free Azure student credits. This provies a place for us to deploy our application.
-The course work will be cross platform. However, in class the instructors will be working on Windows in both VSCode (for front end) and Visual Studio (for back end).
+- [Azure for Students](https://azure.microsoft.com/en-us/free/students/) You will need to sign up for the free Azure student credits. This provides a place for us to deploy our application.
+The course work will be cross-platform. However, in class the instructors will be working on Windows in both VSCode (for front end) and Visual Studio (for back end).
 
 ### Recommended ###
 - [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). Version 17.1 or later. The community edition is fine, though we believe most students should have access to higher SKUs with EWU's MSDN (this assumption may be wrong). Lab computers should have Professional already installed. This will install .NET 6.0.
@@ -56,14 +56,15 @@ The course work will be cross platform. However, in class the instructors will b
 - [JEST](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) Unit testing extension
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) code formatting extension
 - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) Vue tooling
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
 ### Optional ###
-- [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) This lets you easily collaborate with other people on a share set of code. 
+- [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) This lets you easily collaborate with other people on a shared set of code. 
 - [GitExtensions](https://gitextensions.github.io/), [GitHub Desktop](https://desktop.github.com/), (or any other git tool): There are lots of options out there for working with git. If there is a tool you like, use it! 
 
 ## Class Screen Share Recording ##
-We will try to record class presentations so that students can review after class. Recordings will be available in Teams.
+We will try to record class presentations so that students can review after the class. Recordings will be available in Teams.
 
 Please note:
-* **Do not expect or rely on video recordings.**  We are not making any commitment to having video recordings of class. 
-* Please keep all videos ***confidential***. These videos are for people enrolled in this class.  No videos or parts of videos should be copied/distributed/shared.
+* **Do not expect or rely on video recordings.**  We are not making any commitment to having video recordings of the class. 
+* Please keep all videos ***confidential***. These videos are for people enrolled in this class. No videos or parts of videos should be copied/distributed/shared.
