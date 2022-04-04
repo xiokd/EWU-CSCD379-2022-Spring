@@ -1,6 +1,7 @@
 Please feel free to submit updates.
 
 [Assignments Link](Assignments.md)
+
 [Lectures Link](Lectures.md)
 
 ## Instructors ##
