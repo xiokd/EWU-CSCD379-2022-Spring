@@ -1,7 +1,7 @@
 Please feel free to submit updates.
 
-[Homework Link]
-[Lecure Link]
+[Assignments Link](Assignments.md)
+[Lectures Link](Lectures.md)
 
 ## Instructors ##
 [Grant Erickson](https://github.com/GrantErickson), [Meg Woodford](https://github.com/mmwoodfo), and [Mark Michaelis](https://github.com/MarkMichaelis)
