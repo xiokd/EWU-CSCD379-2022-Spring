@@ -18,5 +18,5 @@
 - Creating an API backed with EF (5/3)
 - Authentication (5/5)
 - SignalR (5/10-5/12)
-- Application Insights (5/17)
-- 
+- Metrics using Application Insights (5/17)
+
