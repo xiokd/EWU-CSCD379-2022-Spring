@@ -11,7 +11,7 @@
 ### Next Topics (This list is subject to change based on the pace of the class)
 - TypeScript: Classes and Testing with Jest (4/7)
 - Vue: Components, Events, Properties, Reactivity (4/12)
-- Vuetify: Creating user interfaces, Component usage, UI/UX considerations (4/14-4/19)*
+- Vuetify: Creating user interfaces, Component usage, UI/UX considerations, icons, animation, responsive design, etc. (4/14, 4/19)*
 - UI Wrap up (4/21)
 - ASP.Net Core API endpoint, Deploying and using the API endpoint (4/26)
 - Entity Framework (2/28)*
