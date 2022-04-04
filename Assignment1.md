@@ -17,13 +17,13 @@ The purpose of this assignment is to solidify your learning of:
    - Uses Vuetify ❌✅
    - Uses Jest ❌✅
 
-2. Create a simple TypeScript class ❌✅
-   - Has a method that accepts a name and return 'Hello [Name]' ❌✅
+2. Create a simple TypeScript class called wordsService.ts ❌✅
+   - Has a method called checkLength that accepts a string and returns true if the string is 5 characters long and false otherwise ❌✅
    - Has a Jest unit test that tests the behavior ❌✅
 
 3. Create a simple page called game.vue ❌✅
-   - Page should have a card with a heading ❌✅
-   - some default body text ❌✅
+   - Page should have a card with a heading that with a clever name for the game ❌✅
+   - some default placeholder body text ❌✅
    - and a button to take you back to the home page ❌✅
    - there should be a button the home page to access this page ❌✅
 
@@ -40,9 +40,9 @@ The purpose of this assignment is to solidify your learning of:
    - Nuxt app deploys to Azure ❌✅
 
 7. Azure site works ❌✅
-   - Post your Azure URL in your readme.md file ❌✅
+   - Post your Azure URL in your readme.md file. Replace the URL in the readme with your URL. ❌✅
 
 ## Extra Credit
 
-- Come up with three unique ideas for stories we could implement as part of our project. Post these in your readme.md. ❌✅
-
+- Come up with up to three unique ideas for stories we could implement as part of our project. Post these in your readme.md. ❌✅
+- One point per idea up to three points
