@@ -1,5 +1,8 @@
 Please feel free to submit updates.
 
+[Homework Link]
+[Lecure Link]
+
 ## Instructors ##
 [Grant Erickson](https://github.com/GrantErickson), [Meg Woodford](https://github.com/mmwoodfo), and [Mark Michaelis](https://github.com/MarkMichaelis)
 For general questions, we suggest asking in Teams so that others can help as well. We encourage people to work together and collaborate. Please feel free to help your fellow students out. Though it is possible to privately message people directly, as much as possible, we encourage open discussion on the main chat so that others can benefit as well.
@@ -36,8 +39,17 @@ This class will build on CSCD-371. It will be very difficult if you have not tak
 * [GitHub Actions](https://docs.github.com/en/actions)
 
 ## General Information:
-* [**Grading System**](Homework-Grading.md)
 * **Office Hours**: Office hours are available before class on Tuesday's and Thursdays starting at 1 PM. To ensure that an instructor will be available, please schedule an appointment 24-hours beforehand by sending a meeting request email to EWU-Instructors@IntelliTect.com. Alternative times may be available upon request.
+* A list of topics covered in class will be recorded by students in the [**Lectures**](Lectures.md) markdown file. Please submit a PR to be approved. It will also contain a general schedule for the class, but this may be adjusted based on pacing.
+
+### Homework and Assignments
+* Homework will be hard and will take time to complete. Do not put it off. 
+* Start homework early and come to class with questions. Starting homework late is a recipe for disaster and pain.
+* See the [**Grading System**](Homework-Grading.md) for more details
+* All assignments and due dates are in [**Assignemnts**](Assignments.md)
+* Homework will be done in pairs. If you are experiencing issues, please contact an instructor.
+* Code reviews are done individually
+* The day homework is initially due we will typically go over the assignment in class. (no guarantees)
 
 ## Computer Setup ##
 
@@ -46,6 +58,7 @@ This class will build on CSCD-371. It will be very difficult if you have not tak
 - [Visual Studio Code](https://code.visualstudio.com/) This can largely be used as an alternative to Visual Studio. Many of us also use it as our catch-all lightweight text/code editor.
 - [Azure for Students](https://azure.microsoft.com/en-us/free/students/) You will need to sign up for the free Azure student credits. This provides a place for us to deploy our application.
 The course work will be cross-platform. However, in class the instructors will be working on Windows in both VSCode (for front end) and Visual Studio (for back end).
+- [NPM](https://docs.npmjs.com/) Node Package Manager will provide tooling for bulding our front end web site.
 
 ### Recommended ###
 - [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). Version 17.1 or later. The community edition is fine, though we believe most students should have access to higher SKUs with EWU's MSDN (this assumption may be wrong). Lab computers should have Professional already installed. This will install .NET 6.0.
