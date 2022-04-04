@@ -58,7 +58,7 @@ This class will build on CSCD-371. It will be very difficult if you have not tak
 - [Visual Studio Code](https://code.visualstudio.com/) This can largely be used as an alternative to Visual Studio. Many of us also use it as our catch-all lightweight text/code editor.
 - [Azure for Students](https://azure.microsoft.com/en-us/free/students/) You will need to sign up for the free Azure student credits. This provides a place for us to deploy our application.
 The course work will be cross-platform. However, in class the instructors will be working on Windows in both VSCode (for front end) and Visual Studio (for back end).
-- [NPM](https://docs.npmjs.com/) Node Package Manager will provide tooling for bulding our front end web site.
+- [npm](https://docs.npmjs.com/) Node Package Manager will provide tooling for bulding our front end web site.
 
 ### Recommended ###
 - [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/). Version 17.1 or later. The community edition is fine, though we believe most students should have access to higher SKUs with EWU's MSDN (this assumption may be wrong). Lab computers should have Professional already installed. This will install .NET 6.0.
