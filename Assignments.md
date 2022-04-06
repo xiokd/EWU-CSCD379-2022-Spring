@@ -64,7 +64,7 @@ Assignments will also include an additional 10 points that can be awarded to one
 - Half of the extra credit (10 points) is only (occassionally) avaliable to 1 group per assignment.
 
 
-
+[See the grading template here](https://github.com/IntelliTect-Samples/EWU-CSCD379-2022-Spring/blob/main/GradingTemplate.xlsx)
 
 
 
