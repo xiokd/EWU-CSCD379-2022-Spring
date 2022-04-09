@@ -1,6 +1,6 @@
 ## Lectures
 - [Recording Links](https://intellitectsp.sharepoint.com/:f:/s/EWU-CSCD379-2022-Spring/EvQdR7Ht30tKr3TZn5B6qJYBmdO0FTfx1mTHoibSh2wvdA?e=qH6mSn)
-- This is a teams link and everyone in the class should have access. If not, please contact an instructor.
+- This is an MS Teams link and everyone in the class should have access. If not, please contact an instructor.
 
 ### Lecture 1 (4/5/2022)
 - Introduction/Homework
