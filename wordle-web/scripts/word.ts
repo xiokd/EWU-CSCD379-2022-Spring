@@ -16,12 +16,12 @@ export class Word {
   }
 
   evaluateWord(word: string) {
-    if (word.length == this.letters.length) {
+    if (word.length === this.letters.length) {
       // Determine which letters are in the right spots
     }
-	}
-	
-	get length() {
-		return this.letters.length
-	}
+  }
+
+  get length() {
+    return this.letters.length
+  }
 }

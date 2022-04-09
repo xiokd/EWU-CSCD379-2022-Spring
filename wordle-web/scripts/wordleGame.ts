@@ -1,3 +1,1 @@
-export class WordleGame {
-    
-}
+export class WordleGame {}
