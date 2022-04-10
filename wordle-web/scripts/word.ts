@@ -1,7 +1,11 @@
-import { Letter } from '~/scripts/letter'
+import { Letter, LetterStatus } from '~/scripts/letter'
 
 export class Word {
-  private letters: Letter[] = []
+  readonly letters: Letter[] = []
+
+  get text() {
+    return this.letters.map((f) => f.char).join('')
+  }
 
   addLetter(char: string) {
     if (this.letters.length < 5) {
@@ -15,10 +19,28 @@ export class Word {
     }
   }
 
-  evaluateWord(word: string) {
+  evaluateWord(word: string): boolean {
+    let result = true
     if (word.length === this.letters.length) {
-      // Determine which letters are in the right spots
+      const wordLettersLeft = word.split('')
+      for (const [index, letter] of this.letters.entries()) {
+        // Determine which letters are in the right spots
+        if (word[index] === letter.char) {
+          letter.status = LetterStatus.Correct
+          // Remove the item
+          wordLettersLeft.splice(wordLettersLeft.indexOf(letter.char), 1)
+        } else if (wordLettersLeft.includes(letter.char)) {
+          letter.status = LetterStatus.WrongPlace
+          // Remove the item
+          wordLettersLeft.splice(wordLettersLeft.indexOf(letter.char), 1)
+          result = false
+        } else {
+          letter.status = LetterStatus.Wrong
+          result = false
+        }
+      }
     }
+    return result
   }
 
   get length() {
