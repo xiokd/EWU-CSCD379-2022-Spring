@@ -1,4 +1,4 @@
-import { Word } from '@/scripts/word'
+import { Word } from './word'
 
 export enum GameState {
   Active = 0,
@@ -15,7 +15,6 @@ export class WordleGame {
   private word: string
   words: Word[] = []
   state: GameState = GameState.Active
-  readonly maxGuess = 6
 
   get currentWord(): Word {
     return this.words[this.words.length - 1]
@@ -24,7 +23,7 @@ export class WordleGame {
   submitWord() {
     if (this.currentWord.evaluateWord(this.word)) {
       this.state = GameState.Won
-    } else if (this.words.length === this.maxGuess) {
+    } else if (this.words.length === 5) {
       this.state = GameState.Lost
     } else {
       this.words.push(new Word())
