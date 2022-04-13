@@ -8,9 +8,7 @@ describe('Word Service', () => {
     expect(word).not.toHaveLength(4)
   })
 
-  test("Words are private",() => {
+  test('Words are private', () => {
     expect((WordsService as any).words).toBeUndefined()
   })
 })
-
-

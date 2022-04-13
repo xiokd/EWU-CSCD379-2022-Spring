@@ -21,26 +21,35 @@ export class Word {
 
   evaluateWord(word: string): boolean {
     let result = true
+
     if (word.length === this.letters.length) {
       const wordLettersLeft = word.split('')
+      const lettersLeft = [];
+
       for (const [index, letter] of this.letters.entries()) {
-        // Determine which letters are in the right spots
         if (word[index] === letter.char) {
           letter.status = LetterStatus.Correct
-          // Remove the item
           wordLettersLeft.splice(wordLettersLeft.indexOf(letter.char), 1)
-        } else if (wordLettersLeft.includes(letter.char)) {
-          letter.status = LetterStatus.WrongPlace
-          // Remove the item
-          wordLettersLeft.splice(wordLettersLeft.indexOf(letter.char), 1)
-          result = false
-        } else {
-          letter.status = LetterStatus.Wrong
-          result = false
-        }
+      }else{
+          result = false;
+          lettersLeft.push(letter);
       }
     }
-    return result
+
+      if(!result){
+          for (const letter of lettersLeft) {
+            if (wordLettersLeft.includes(letter.char)) {
+              letter.status = LetterStatus.WrongPlace
+              wordLettersLeft.splice(wordLettersLeft.indexOf(letter.char), 1)
+            } else {
+              letter.status = LetterStatus.Wrong
+            }
+          }
+      }
+      return result
+    } else {
+      return false
+    }
   }
 
   get length() {
