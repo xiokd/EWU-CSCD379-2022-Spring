@@ -52,7 +52,9 @@ export default class KeyBoard extends Vue {
   }
 
   guessWord() {
-      this.wordleGame.submitWord();
+      if(this.wordleGame.currentWord.length === this.wordleGame.currentWord.maxLetters){
+        this.wordleGame.submitWord();
+      }
   }
 
   letterColor(char: string): string {
