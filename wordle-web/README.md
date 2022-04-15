@@ -1,5 +1,13 @@
 # wordle-web
 
+## Assignment 1
+Azure Link: https://calm-sand-08b0dd810.1.azurestaticapps.net/
+
+Extra Credit:
+  * Idea 1 - Add in a hint feature into the game. Can make it so that you can earn hints after a certain number of correct guesses/completed words. If we     want to make sure that it isn't to easy, we can limit the amount of hints that you can use per word.
+  * Idea 2 - We can add in another color to keep track of letters that have duplicates. We would need two new colors to track the duplicates. One for the     letter having a duplicate and one of them is in the correct place. Another color for the letter being a duplicate but it is not in the right place yet. 
+  * Idea 3 - We could also add in a difficulty system. For players to do common words on an easier mode and then more difficult words for the hard/expert     modes. For those it would be words that are not used in day to day and are not commonly used. 
+
 ## Build Setup
 
 ```bash
