@@ -1,10 +1,10 @@
 <template>
     <v-card>
         <v-card-title>
-            A Creative Title
+            Nuxtl2 
         </v-card-title>
         <v-card-text>
-            This is placeholder text
+            The better Wordle built on nuxtle
         </v-card-text>
         <hr>
         <v-card-actions>
