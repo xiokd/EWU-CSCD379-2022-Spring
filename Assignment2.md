@@ -39,6 +39,7 @@ Note: Custom CSS can only be used where specified.
 - Make it look like [wordle.com](https://www.nytimes.com/games/wordle/index.html) or the Wordle mobile app ❌✅
 - Add gradient to guesses blocks and keys (with CSS) ❌✅
 - Add drop shadow to keys (No CSS) ❌✅
+- Make the app responsive (No CSS) ❌✅
 
 ## Extra Credit
 
