@@ -2,7 +2,7 @@ import { Letter, LetterStatus } from '~/scripts/letter'
 
 export class Word {
   readonly letters: Letter[] = []
-  readonly maxLetters = 5;
+  readonly maxLetters = 5
 
   get text() {
     return this.letters.map((f) => f.char).join('')
@@ -25,27 +25,27 @@ export class Word {
 
     if (word.length === this.letters.length) {
       const wordLettersLeft = word.split('')
-      const lettersLeft = [];
+      const lettersLeft = []
 
       for (const [index, letter] of this.letters.entries()) {
         if (word[index] === letter.char) {
           letter.status = LetterStatus.Correct
           wordLettersLeft.splice(wordLettersLeft.indexOf(letter.char), 1)
-      }else{
-          result = false;
-          lettersLeft.push(letter);
+        } else {
+          result = false
+          lettersLeft.push(letter)
+        }
       }
-    }
 
-      if(!result){
-          for (const letter of lettersLeft) {
-            if (wordLettersLeft.includes(letter.char)) {
-              letter.status = LetterStatus.WrongPlace
-              wordLettersLeft.splice(wordLettersLeft.indexOf(letter.char), 1)
-            } else {
-              letter.status = LetterStatus.Wrong
-            }
+      if (!result) {
+        for (const letter of lettersLeft) {
+          if (wordLettersLeft.includes(letter.char)) {
+            letter.status = LetterStatus.WrongPlace
+            wordLettersLeft.splice(wordLettersLeft.indexOf(letter.char), 1)
+          } else {
+            letter.status = LetterStatus.Wrong
           }
+        }
       }
       return result
     } else {
