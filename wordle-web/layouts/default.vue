@@ -1,13 +1,17 @@
 <template>
   <v-app dark>
     <v-app-bar clipped-left fixed app>
-          <router-link to="/" class="text-h4 font-weight-black" style="text-decoration: none">
-            Wordle
-          </router-link>
+      <router-link
+        to="/"
+        class="text-h4 font-weight-black"
+        style="text-decoration: none"
+      >
+        Wordle
+      </router-link>
 
-          <v-spacer />
+      <v-spacer />
 
-          <settings-dialog />
+      <settings-dialog />
     </v-app-bar>
     <v-main>
       <v-container>
@@ -21,11 +25,9 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator';
-import SettingsDialog from '@/components/settings-dialog.vue';
+import { Vue, Component } from 'vue-property-decorator'
+import SettingsDialog from '@/components/settings-dialog.vue'
 
 @Component({ components: { SettingsDialog } })
-export default class DefaultLayout extends Vue {
-
-}
+export default class DefaultLayout extends Vue {}
 </script>

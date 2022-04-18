@@ -69,7 +69,7 @@ export default {
         },
         light: {
           primary: colors.deepPurple,
-          accent: colors.orange.darken-4,
+          accent: colors.orange.darken - 4,
           secondary: colors.pink,
           info: colors.blue,
           warning: colors.yellow.darken4,
