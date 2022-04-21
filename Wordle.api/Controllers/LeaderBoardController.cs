@@ -29,6 +29,13 @@ namespace Wordle.api.Controllers
             };
             return results;
         }
+        
+        [HttpPost]
+        public void Post([FromBody] GameScore score)
+        {
+            _logger.LogInformation("LeaderBoardController.Post()");
+            _leaderBoardService.AddScore(score);
+        }
 
 
 
