@@ -1,16 +1,10 @@
 <template>
-  <v-app dark>
-    <v-app-bar clipped-left fixed app>
-      <router-link
-        to="/"
-        class="text-h4 font-weight-black"
-        style="text-decoration: none"
-      >
+  <v-app>
+    <v-app-bar fixed app>
+      <router-link to="/" class="text-h4 font-weight-black no-decoration">
         Wordle
       </router-link>
-
       <v-spacer />
-
       <settings-dialog />
     </v-app-bar>
     <v-main>
@@ -18,7 +12,7 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer absolute app>
+    <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
