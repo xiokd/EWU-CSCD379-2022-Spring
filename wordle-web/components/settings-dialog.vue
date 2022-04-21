@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-btn icon @click="toggleDialog">
+    <v-btn icon @click="dialog = !dialog">
       <v-icon> mdi-cog </v-icon>
     </v-btn>
 
@@ -12,32 +12,38 @@
           <v-card-text>
             <v-menu offset-y>
               <template #activator="{ on, attrs }">
-                <v-btn color="primary" dark v-bind="attrs" v-on="on">
-                  Pick Theme
+                <v-btn outlined color="primary" dark v-bind="attrs" v-on="on">
+                  Mode
                 </v-btn>
               </template>
               <v-list>
                 <v-list-item-group>
-                  <v-list-item @click="turnOnTheLights">
-                    <v-list-item-title> Light Mode </v-list-item-title>
+                  <v-list-item>
+                    <v-list-item-title @click="lightMode">
+                      Light
+                    </v-list-item-title>
                   </v-list-item>
-                  <v-list-item @click="turnOffTheLights">
-                    <v-list-item-title> Dark Mode </v-list-item-title>
+                  <v-list-item>
+                    <v-list-item-title> Dark </v-list-item-title>
                   </v-list-item>
                 </v-list-item-group>
               </v-list>
             </v-menu>
+          </v-card-text>
 
+          <v-card-text>
             <v-menu offset-y>
               <template #activator="{ on, attrs }">
-                <v-btn color="primary" dark v-bind="attrs" v-on="on">
-                  Pick A Color
+                <v-btn outlined color="primary" dark v-bind="attrs" v-on="on">
+                  ColorTheme
                 </v-btn>
               </template>
               <v-list>
                 <v-list-item-group>
-                  <v-list-item @click="purpleTheme">
-                    <v-list-item-title> Purple </v-list-item-title>
+                  <v-list-item>
+                    <v-list-item-title @click="purpleTheme">
+                      purple
+                    </v-list-item-title>
                   </v-list-item>
                 </v-list-item-group>
               </v-list>
@@ -51,37 +57,29 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import { colors } from 'vuetify/lib'
 
-@Component({})
+@Component({ components: {} })
 export default class SettingsDialog extends Vue {
   dialog = false
 
-  toggleDialog() {
-    this.dialog = !this.dialog
-  }
-
-  turnOnTheLights() {
+  lightMode() {
     this.$vuetify.theme.dark = false
-  }
-
-  turnOffTheLights() {
-    // Implement Me
   }
 
   purpleTheme() {
     const purpleTheme = {
-      primary: colors.deepPurple,
-      accent: colors.purple.accent3,
-      secondary: colors.purple,
+      primary: '#673AB7',
+      secondary: '#9C27B0',
+      error: '#F50057',
+      warning: '#B388FF',
+      success: '#3F51B5',
+      accent: '#880E4F',
       info: '#03A9F4',
-      warning: colors.pink.accent1,
-      error: colors.pink.accent3,
-      success: colors.deepPurple.lighten4,
+      background: '#D1C4E9',
     }
 
-    this.$vuetify.theme.themes.dark = purpleTheme
     this.$vuetify.theme.themes.light = purpleTheme
+    this.$vuetify.theme.themes.dark = purpleTheme
   }
 }
 </script>
