@@ -3,9 +3,11 @@
     <v-app-bar fixed app>
       <router-link to="/" class="text-h4 font-weight-black no-decoration">
         Wordle
+        <v-icon large color=primary>mdi-alpha-w-box-outline</v-icon>
       </router-link>
       <v-spacer />
       <settings-dialog />
+      <menu-options />
     </v-app-bar>
     <v-main>
       <v-container>
