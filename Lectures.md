@@ -3,11 +3,16 @@
 - This is an MS Teams link and everyone in the class should have access. If not, please contact an instructor.
 
 ### Lecture 7 (4/26/22)
-- Complete the Leaderboard API
-- Unit testing the LeaderBoardService
-- Unit testing LeaderboardController
-  - Creating mocks for the ILogger and ILeaderBoardService
-- Integration testing the LeaderBoard API endpoints
+- Complete the Leaderboard API without spilling the beans on Homework #3
+- ASP.NET Unit Testing
+  - Unit testing the LeaderBoardService
+  - Unit testing LeaderboardController
+  - Creating a mock for ILeaderBoardService
+  - Integration testing the LeaderBoard API endpoints
+- Building a Statistics Controller
+  - Setting up EF
+  - Adding a Context and Statistics class
+  - Migrations
 
 ### Lecture 6 (4/21/22)
 - Creating an API project in C# with .NET 6
