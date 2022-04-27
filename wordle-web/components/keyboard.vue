@@ -1,10 +1,12 @@
 <template>
-  <v-card class="my-5 pa-5">
+  <v-card class="my-5 pa-5"
+  style = "background: linear-gradient(rgba(0,0,0,1) 0%, rgba(10,10,10,1) 100%)">
     <v-row v-for="(charRow, i) in chars" :key="i" no-gutters justify="center">
       <v-col v-for="char in charRow" :key="char" cols="1">
         <v-container class="text-center">
           <v-btn
             :color="letterColor(char)"
+            elevation = "15"
             :disabled="wordleGame.gameOver"
             @click="setLetter(char)"
           >

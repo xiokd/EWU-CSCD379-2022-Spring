@@ -1,7 +1,7 @@
 
 <script lang="ts">
 
-import { defineComponent } from 'vue'
+//import { defineComponent } from 'vue'
 import { Component, Vue, Prop } from 'vue-property-decorator'
 import { WordsService } from '~/scripts/wordsService'
 import { Word } from '~/scripts/word'
@@ -17,11 +17,11 @@ export default class WordList extends Vue { //make word list class
             }
         }
         let matches: string [] = []
-        WordsService.#words.forEach( (element: any) => {
+        /*WordsService.#words.forEach( (element: any) => { //move this to wordsService, since word is a private 
             if (element.match(input)){
                 matches.push(element)
             }
-        })
+        })*/ 
         return matches;
     }
 }
