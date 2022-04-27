@@ -36,7 +36,7 @@ export default class MenuOptions extends Vue{
             items: [
                 {
                     icon: 'mdi-information',
-                    title: 'About Us',
+                    title: 'About',
                     to: '/about',
                 },
             ]
