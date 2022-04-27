@@ -39,6 +39,12 @@
                   <v-list-item @click="purpleTheme">
                     <v-list-item-title> Purple </v-list-item-title>
                   </v-list-item>
+                  <v-list-item @click="mintTheme">
+                    <v-list-item-title> Mint </v-list-item-title>
+                  </v-list-item>
+                  <v-list-item @click="cyberpunkTheme">
+                    <v-list-item-title> Cyberpunk </v-list-item-title>
+                  </v-list-item>
                 </v-list-item-group>
               </v-list>
             </v-menu>
@@ -66,7 +72,7 @@ export default class SettingsDialog extends Vue {
   }
 
   turnOffTheLights() {
-    // Implement Me
+    this.$vuetify.theme.dark = true
   }
 
   purpleTheme() {
@@ -82,6 +88,34 @@ export default class SettingsDialog extends Vue {
 
     this.$vuetify.theme.themes.dark = purpleTheme
     this.$vuetify.theme.themes.light = purpleTheme
+  }
+
+    mintTheme() {
+    const mintTheme = {
+      primary: '#B2EEE6',
+      accent: '#66BEB2',
+      secondary:'#8AD6CC',
+      info: '#03A9F4',
+      warning: '#FBEC77',
+      error: '#F97171',
+      success: '#62E382',
+    }
+    this.$vuetify.theme.themes.dark = mintTheme
+    this.$vuetify.theme.themes.light = mintTheme
+  }
+
+  cyberpunkTheme() {
+    const cyberpunkTheme = {
+      primary: '#711C91',
+      accent: '#EA00D9',
+      secondary:'#0ABDC6',
+      info: '#133E7C',
+      warning: '#FA4600',
+      error: '#C60D57',
+      success: '#00F745',
+    }
+    this.$vuetify.theme.themes.dark = cyberpunkTheme
+    this.$vuetify.theme.themes.light = cyberpunkTheme
   }
 }
 </script>
