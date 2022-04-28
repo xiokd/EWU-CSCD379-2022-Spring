@@ -11,11 +11,11 @@
         </v-card-text>
     <v-tooltip bottom>
       <template #activator="{ on, attrs }">
-        <v-btn color="primary" nuxt to="/game" fab v-bind="attrs" v-on="on">
+        <v-btn color="primary" @click="$router.go(-1)" fab v-bind="attrs" v-on="on">
           <v-icon> mdi-arrow-left </v-icon>
         </v-btn>
       </template>
-      <span> Return to Game </span>
+      <span> Go Back </span>
     </v-tooltip>
     
     </v-container>
