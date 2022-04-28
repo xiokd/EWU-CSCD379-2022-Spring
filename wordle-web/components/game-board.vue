@@ -1,6 +1,6 @@
 <template>
   <v-card width="450"
-  style="background: linear-gradient(rgba(0,0,0,1) 0%, rgba(10,10,10,1) 100%)"> //add background gradient
+  style = "background: linear-gradient(180deg, rgba(5,50,85,.5) 0%, rgba(5,50,90,1) 85%, rgba(10,50,110,1) 100%)">
     <v-container>
       <v-row v-for="row in wordleGame.maxGuesses" :key="row" dense>
         <v-col v-for="index in wordleGame.currentWord.maxLetters" :key="index">
