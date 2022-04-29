@@ -15,27 +15,28 @@
         </v-container>
       </v-col>
     </v-row>
-    <v-btn
-      :disabled="wordleGame.gameOver"
-      class="float-left"
-      @click="guessWord"
-    >
-      Guess
-    </v-btn>
-    <v-btn
-      class = "center"
-
-    >
-      Available Words: <!--{{wordsService.validWords(matches.length)}}-->
-    </v-btn>
-    <v-btn
-      :disabled="wordleGame.gameOver"
-      icon
-      class="float-right"
-      @click="removeLetter"
-    >
-      <v-icon>mdi-backspace</v-icon>
-    </v-btn>
+    <v-layout align-space-between justify-space-between> 
+      <v-btn
+        :disabled="wordleGame.gameOver"
+        class="float-left"
+        @click="guessWord"
+      >
+        Guess
+      </v-btn>
+      <v-btn
+        class = "center"
+      >
+        {{availableWords}} Available Words
+      </v-btn>
+      <v-btn
+        :disabled="wordleGame.gameOver"
+        icon
+        class="float-right"
+        @click="removeLetter"
+      >
+        <v-icon>mdi-backspace</v-icon>
+      </v-btn>
+    </v-layout>
   </v-card>
 </template>
 
