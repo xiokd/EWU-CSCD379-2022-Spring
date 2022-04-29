@@ -1,6 +1,6 @@
 export abstract class WordsService {
   static getRandomWord(): string {
-    return this.words[Math.floor(Math.random() * this.words.length)]
+    return this.#words[Math.floor(Math.random() * this.#words.length)]
   }
 
   //make method to access the words and return the validWords
@@ -19,11 +19,12 @@ export abstract class WordsService {
     }
     let matches: string [] = []; //making an array to hold all possible answers
 
-    for (let x = 0; x < this.words.length; x++) { //increment through whole word array
-      if(WordsService.words[x].match(input)){
-        matches.push(WordsService.words[x]);
+    for (let x = 0; x < this.#words.length; x++) { //increment through whole word array
+      if(WordsService.#words[x].match(input)){
+        matches.push(WordsService.#words[x]);
       }
     }
+    var availableWords: number = matches.length;
     /*WordsService.#words.forEach( (element: any) => { //move this to wordsService, since word is a private 
         if (element.match(input)){
             matches.push(element)
@@ -33,7 +34,7 @@ export abstract class WordsService {
   }
 
   // From: https://github.com/kashapov/react-testing-projects/blob/master/random-word-server/five-letter-words.json
-  static readonly words: string[] = [
+  static readonly #words: string[] = [
     'acorn', 
     'acrid',
     'actor',

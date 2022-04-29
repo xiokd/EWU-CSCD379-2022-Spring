@@ -26,7 +26,7 @@
       class = "center"
 
     >
-      Available Words: <!--{{ matches.length}}-->
+      Available Words: <!--{{wordsService.validWords(matches.length)}}-->
     </v-btn>
     <v-btn
       :disabled="wordleGame.gameOver"
@@ -43,7 +43,7 @@
 import { Component, Vue, Prop } from 'vue-property-decorator'
 import { Letter, LetterStatus } from '~/scripts/letter'
 import { WordleGame } from '~/scripts/wordleGame'
-//import { WordsService } from '~/scripts/wordsService'
+import { WordsService } from '~/scripts/wordsService'
 
 @Component
 export default class KeyBoard extends Vue {
