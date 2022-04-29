@@ -23,6 +23,12 @@
       Guess
     </v-btn>
     <v-btn
+      class = "center"
+
+    >
+      Available Words: <!--{{ matches.length}}-->
+    </v-btn>
+    <v-btn
       :disabled="wordleGame.gameOver"
       icon
       class="float-right"
@@ -37,6 +43,7 @@
 import { Component, Vue, Prop } from 'vue-property-decorator'
 import { Letter, LetterStatus } from '~/scripts/letter'
 import { WordleGame } from '~/scripts/wordleGame'
+//import { WordsService } from '~/scripts/wordsService'
 
 @Component
 export default class KeyBoard extends Vue {
