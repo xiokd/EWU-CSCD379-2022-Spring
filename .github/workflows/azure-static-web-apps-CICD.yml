@@ -1,5 +1,6 @@
 name: Azure Static Web Apps CI/CD
-
+env:
+  API_URL: ${{secrets.API_URL}}
 on:
   push:
     branches:
@@ -7,6 +8,7 @@ on:
       - "Assignment*"
     paths:
       - 'wordle-web/**'
+      - '**/azure-static-web*'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
@@ -18,8 +20,6 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed') || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     name: Build and Deploy Job
-    env: 
-      API_URL:"https://wordleapiclass.azurewebsites.net"
       
     steps:
       - uses: actions/checkout@v2
