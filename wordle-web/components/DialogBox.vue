@@ -11,7 +11,7 @@
           outlined
         ></v-text-field>
       </v-row>
-      <v-row>
+      <!-- <v-row>
         <v-text-field
           name="password"
           id="password"
@@ -28,7 +28,7 @@
           class="px-6"
           outlined
         ></v-text-field>
-      </v-row>
+      </v-row> -->
       <v-container>
         <v-btn class="dontSavePlayAgain mx-6 purple" @click="playGame()"
           >nevermind, i'll play again without saving</v-btn
@@ -47,17 +47,11 @@ import Component from 'vue-class-component'
 
 @Component
 export default class DialogBox extends Vue {
-  // props: ['show']
-
   visible: boolean = false
-
-  DialogBox(show: boolean) {
-    this.visible = show
-  }
 
   playGame() {}
 
-  saveCredentials() {}
+  // saveCredentials() {}
 
   showDialog() {
     this.visible = !this.visible

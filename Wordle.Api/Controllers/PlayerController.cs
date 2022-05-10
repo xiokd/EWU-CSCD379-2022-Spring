@@ -17,19 +17,22 @@ public class PlayerController : ControllerBase
     [HttpGet]
     public IEnumerable<Player> Get()
     {
-
+        return _service.GetPlayer();
     }
 
     [HttpPost]
-    public IActionResult Post([FromBody] ScoreStatPost score)
+    public IActionResult Post([FromBody] PlayerPost player)
     {
-
-
+        // check if score 
+        _service.Update(player);
+        return Ok();
     }
     public class PlayerPost
     {
-
-
+        public String PlayerId {get; set;}
+        public String Name {get; set;}
+        public int GameCount {get; set;}
+        public double AverageAttempts {get; set;}
     }
 }
 
