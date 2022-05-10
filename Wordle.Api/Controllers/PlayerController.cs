@@ -17,14 +17,14 @@ public class PlayerController : ControllerBase
     [HttpGet]
     public IEnumerable<Player> Get()
     {
-        return _service.GetPlayer();
+        return _service.GetPlayers();
     }
 
     [HttpPost]
     public IActionResult Post([FromBody] PlayerPost player)
     {
         // check if score 
-        _service.Update(player);
+        _service.Update(player.Name, player.AverageAttempts, player.AverageTime);
         return Ok();
     }
     public class PlayerPost

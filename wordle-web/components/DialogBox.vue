@@ -9,6 +9,7 @@
           placeholder="create a username"
           class="px-6 mt-4"
           outlined
+          v-model="userName"
         ></v-text-field>
       </v-row>
       <!-- <v-row>
@@ -34,7 +35,7 @@
           >nevermind, i'll play again without saving</v-btn
         >
         <v-btn class="saveCredentials mx-6 green" @click="saveCredentials()"
-          >create user</v-btn
+          >save username {{ userName }}</v-btn
         >
       </v-container>
     </v-card>
@@ -48,6 +49,8 @@ import Component from 'vue-class-component'
 @Component
 export default class DialogBox extends Vue {
   visible: boolean = false
+
+  userName: string = ''
 
   playGame() {}
 
